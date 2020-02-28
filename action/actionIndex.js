@@ -1,7 +1,6 @@
 const {getInput} = require('@actions/core');
 const {GitHub, context} = require('@actions/github');
 const bugsnag = require('@bugsnag/js');
-/* eslint-disable-next-line */
 const {getDependencies} = require('@shopify/splash');
 
 const CommentState = {
