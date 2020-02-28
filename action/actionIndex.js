@@ -1,8 +1,7 @@
-import {getInput} from '@actions/core';
-import {GitHub, context} from '@actions/github';
-import bugsnag from '@bugsnag/js';
-/* eslint-disable-next-line */
-import {getDependencies} from '@shopify/splash';
+const {getInput} = require('@actions/core');
+const {GitHub, context} = require('@actions/github');
+const bugsnag = require('@bugsnag/js');
+const {getDependencies} = require('@shopify/splash');
 
 const CommentState = {
   Loading: 'Loading',
