@@ -14,6 +14,5 @@ else
 fi
 
 echo "## Running action"
-mv /babel.config.js .
 mv /actionIndex.js .
-sh -c "$setup yarn run babel-node actionIndex.js"
+sh -c "$setup node actionIndex.js"
